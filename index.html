@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+
+        .first {
+            width: 100%;
+            height: 100vh;
+
+            /* border: 1px solid red; */
+            >nav {
+                width: 100%;
+                height: 100%;
+
+                >ul {
+                    /* border: 1px solid black; */
+                    width: 100%;
+                    height: 100%;
+
+                    >li {
+                        border-bottom: 1px solid rgba(93, 84, 84, 0.16);
+                        width: 100%;
+                        height: 150px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        padding-left: 40px;
+                        list-style-type: none;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        transition: .4s;
+                        overflow: hidden;
+                        position: relative;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba(93, 84, 84, 0.16);
+                        }
+
+                        &:hover {
+                            >span {
+                                transform: translateY(-100%);
+                            }
+
+                            >div {
+                                opacity: 1;
+                            }
+
+                        }
+
+                        >span {
+                            /* border: 1px solid red; */
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            transition: .8s;
+                        }
+
+                        >div {
+                            position: absolute;
+                            top: 50px;
+                            transform: translateY(-25px);
+                            right: 30px;
+                            /* border: 1px solid red; */
+                            width: 500px;
+                            height: 100px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            opacity: 0;
+                            transition: .8s;
+
+                            >img {
+                                width: 20%;
+                                height: 100%;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .love {
+            width: 100%;
+            height: 100vh;
+            transform: translate(2000px , -800px);
+            transition: 1s;
+
+            >article {
+                width: 100%;
+                position: relative;
+
+                >h2 {
+                    width: 100%;
+                    margin-top: 100px;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+
+                }
+
+                >span {
+                    display: flex;
+                    width: 20%;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    cursor: pointer;
+
+                    >i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                /* border: 1px solid green; */
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 70px auto;
+
+                >img {
+                    width: 200px;
+                    height: 200px;
+                    /* border: 1px solid black; */
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .wings {
+            width: 100%;
+            height: 100vh;
+            transform: translate(2000px , -1610px);
+            transition: 1s;
+
+            >article {
+                width: 100%;
+                position: relative;
+
+                >h2 {
+                    width: 100%;
+                    margin-top: 100px;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+
+                }
+
+                >span {
+                    display: flex;
+                    width: 20%;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    cursor: pointer;
+
+                    >i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                /* border: 1px solid green; */
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 70px auto;
+
+                >img {
+                    width: 200px;
+                    height: 200px;
+                    /* border: 1px solid black; */
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .fly {
+            width: 100%;
+            height: 100vh;
+            transform: translate(2000px , -2450px);
+            transition: 1s;
+
+            >article {
+                width: 100%;
+                position: relative;
+
+                >h2 {
+                    width: 100%;
+                    margin-top: 100px;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+
+                }
+
+                >span {
+                    display: flex;
+                    width: 20%;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    cursor: pointer;
+
+                    >i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                /* border: 1px solid green; */
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 70px auto;
+
+                >img {
+                    width: 200px;
+                    height: 200px;
+                    /* border: 1px solid black; */
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .toe {
+            width: 100%;
+            height: 100vh;
+            transform: translate(2000px , -3260px);
+            transition: 1s;
+
+            >article {
+                width: 100%;
+                position: relative;
+
+                >h2 {
+                    width: 100%;
+                    margin-top: 100px;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+
+                }
+
+                >span {
+                    display: flex;
+                    width: 20%;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    cursor: pointer;
+
+                    >i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                /* border: 1px solid green; */
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 70px auto;
+
+                >img {
+                    width: 200px;
+                    height: 200px;
+                    /* border: 1px solid black; */
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .wax {
+            width: 100%;
+            height: 100vh;
+            transform: translate(2000px , -4090px);
+            transition: 1s;
+
+            >article {
+                width: 100%;
+                position: relative;
+
+                >h2 {
+                    width: 100%;
+                    margin-top: 100px;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: center;
+                    font-size: 50px;
+                    text-transform: uppercase;
+
+                }
+
+                >span {
+                    display: flex;
+                    width: 20%;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    cursor: pointer;
+
+                    >i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                /* border: 1px solid green; */
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 70px auto;
+
+                >img {
+                    width: 200px;
+                    height: 200px;
+                    /* border: 1px solid black; */
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .show{
+            transform: translate(0 , -800px); 
+        }
+        .show2{
+            transform: translate(0 , -1610px); 
+        }
+        .show3{
+            transform: translate(0 , -2450px); 
+        }
+        .show4{
+            transform: translate(0 , -3260px); 
+        }
+        .show5{
+            transform: translate(0 , -4090px); 
+        }
+        .myop{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="first">
+        <nav>
+            <ul>
+                <li data-name="Nobody's Love">
+                    <span>Nobody's Love</span>
+                    <span>Nobody's Love</span>
+                    <div>
+                        <img src="img/Late summer nights on a balcony 🤌🏻.jpeg" alt="">
+                        <img src="img/_Woman Inside Of A Dark Mysterious Black Cloth Blowing In The Wind In The Desolate Desert_ by Stocksy Contributor _Itla_.jpeg"
+                            alt="">
+                        <img src="img/Anatomical Heart Brain Lungs Kidneys Print Anatomy Printable Flower Medical Nephrology Wall Art Organ Cardiology Décor Clinic Hospital Pink.jpeg"
+                            alt="">
+                        <img src="img/girl_.jpeg" alt="">
+                    </div>
+                </li>
+                <li data-name="Good Wings">
+                    <span>Good Wings</span>
+                    <span>Good Wings</span>
+                    <div>
+                        <img src="img/2 1.jpeg" alt="">
+                        <img src="img/2 2.jpeg"
+                            alt="">
+                        <img src="img/2 3.jpeg"
+                            alt="">
+                        <img src="img/2 4.jpeg" alt="">
+                    </div>
+                </li>
+                <li data-name="Maniac Fly">
+                    <span>Maniac Fly</span>
+                    <span>Maniac Fly</span>
+                    <div>
+                        <img src="img/3 1.jpeg" alt="">
+                        <img src="img/3 2 .jpeg"
+                            alt="">
+                        <img src="img/3 3.jpeg"
+                            alt="">
+                        <img src="img/3 4.jpeg" alt="">
+                    </div>
+                </li>
+                <li data-name="Crumble Toe">
+                    <span>Crumble Toe</span>
+                    <span>Crumble Toe</span>
+                    <div>
+                        <img src="img/4 1.jpeg" alt="">
+                        <img src="img/4 2.jpeg"
+                            alt="">
+                        <img src="img/4 3.jpeg"
+                            alt="">
+                        <img src="img/4 4.jpeg" alt="">
+                    </div>
+                </li>
+                <li data-name="Finger Wax">
+                    <span>Finger Wax</span>
+                    <span>Finger Wax</span>
+                    <div>
+                        <img src="img/5 1.jpeg" alt="">
+                        <img src="img/5 2.jpeg"
+                            alt="">
+                        <img src="img/5 3.jpeg"
+                            alt="">
+                        <img src="img/5 4.jpeg" alt="">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="love">
+        <article>
+            <h2>Nobody's Love</h2>
+            <span>
+                <i class="bi bi-x-lg"></i>
+            </span>
+        </article>
+        <div>
+            <img src="img/Late summer nights on a balcony 🤌🏻.jpeg" alt="">
+            <img src="img/_Woman Inside Of A Dark Mysterious Black Cloth Blowing In The Wind In The Desolate Desert_ by Stocksy Contributor _Itla_.jpeg"
+                alt="">
+            <img src="img/Anatomical Heart Brain Lungs Kidneys Print Anatomy Printable Flower Medical Nephrology Wall Art Organ Cardiology Décor Clinic Hospital Pink.jpeg"
+                alt="">
+            <img src="img/girl_.jpeg" alt="">
+            <img src="img/download (1).jpeg" alt="">
+            <img src="img/_ LUNDLUND _.jpeg" alt="">
+            <img src="img/Dann mal Prost_ 5 gute Gründe, öfter ein Glas Wein zu trinken.jpeg" alt="">
+            <img src="img/Saker jag är sugen på 2019 _ (Elsa Billgren).jpeg" alt="">
+        </div>
+    </section>
+    <section class="wings">
+        <article>
+            <h2>Good Wings</h2>
+            <span>
+                <i class="bi bi-x-lg"></i>
+            </span>
+        </article>
+        <div>
+            <img src="img/2 1.jpeg" alt="">
+            <img src="img/2 2.jpeg"
+                alt="">
+            <img src="img/2 3.jpeg"
+                alt="">
+            <img src="img/2 4.jpeg" alt="">
+            <img src="img/2 5.jpeg" alt="">
+            <img src="img/2 6.jpeg" alt="">
+            <img src="img/2 7.jpeg" alt="">
+            <img src="img/2 8 .jpeg" alt="">
+        </div>
+    </section>
+    <section class="fly">
+        <article>
+            <h2>Maniac Fly</h2>
+            <span>
+                <i class="bi bi-x-lg"></i>
+            </span>
+        </article>
+        <div>
+            <img src="img/3 1.jpeg" alt="">
+            <img src="img/3 2 .jpeg"
+                alt="">
+            <img src="img/3 3.jpeg"
+                alt="">
+            <img src="img/3 4.jpeg" alt="">
+            <img src="img/3 5.jpeg" alt="">
+            <img src="img/3 6.jpg" alt="">
+            <img src="img/3 7.jpeg" alt="">
+            <img src="img/3 8.jpeg" alt="">
+        </div>
+    </section>
+    <section class="toe">
+        <article>
+            <h2>Crumble Toe</h2>
+            <span>
+                <i class="bi bi-x-lg"></i>
+            </span>
+        </article>
+        <div>
+            <img src="img/4 1.jpeg" alt="">
+            <img src="img/4 2.jpeg"
+                alt="">
+            <img src="img/4 3.jpeg"
+                alt="">
+            <img src="img/4 4.jpeg" alt="">
+            <img src="img/4 5.jpeg" alt="">
+            <img src="img/4 6.jpeg" alt="">
+            <img src="img/4 7.jpeg" alt="">
+            <img src="img/4 8.jpeg" alt="">
+        </div>
+    </section>
+    <section class="wax">
+        <article>
+            <h2>Finger Wax</h2>
+            <span>
+                <i class="bi bi-x-lg"></i>
+            </span>
+        </article>
+        <div>
+            <img src="img/5 1.jpeg" alt="">
+            <img src="img/5 2.jpeg"
+                alt="">
+            <img src="img/5 3.jpeg"alt="">
+            <img src="img/5 4.jpeg" alt="">
+            <img src="img/5 5.jpeg" alt="">
+            <img src="img/5 6.jpeg" alt="">
+            <img src="img/5 7.jpeg" alt="">
+            <img src="img/5 8.jpeg" alt="">
+        </div>
+    </section>
+</body>
+<script>
+    const li = document.querySelectorAll('.first>nav>ul>li')
+    const close = document.querySelector('.love>article>span')
+    const close2 = document.querySelector('.wings>article>span')
+    const close3 = document.querySelector('.fly>article>span')
+    const close4 = document.querySelector('.toe>article>span')
+    const close5 = document.querySelector('.wax>article>span')
+    const love = document.querySelector('.love')
+    const first = document.querySelector('.first')
+    const wings = document.querySelector('.wings')
+    const fly = document.querySelector('.fly')
+    const toe = document.querySelector('.toe')
+    const wax = document.querySelector('.wax')
+    li.forEach((val) => {
+        val.addEventListener('click', () => {
+            
+          
+
+            let temp = val.getAttribute('data-name')
+            console.log(temp);
+
+            if(temp == "Nobody's Love"){
+                love.classList.add('show')
+                first.classList.add('myop')
+
+            }else if( temp == "Good Wings"){
+                wings.classList.add('show2')
+                first.classList.add('myop')
+
+            }else if( temp == "Maniac Fly"){
+                fly.classList.add('show3')
+                first.classList.add('myop')
+
+            }else if( temp == "Crumble Toe"){
+                toe.classList.add('show4')
+                first.classList.add('myop')
+
+            }else if( temp == "Finger Wax"){
+                wax.classList.add('show5')
+                first.classList.add('myop')
+            }
+            
+        })
+
+    })
+    close.addEventListener('click',()=>{
+        love.classList.remove('show')
+        first.classList.remove('myop')
+    })
+    close2.addEventListener('click',()=>{
+        wings.classList.remove('show2')
+        first.classList.remove('myop')
+    })
+    close3.addEventListener('click',()=>{
+        fly.classList.remove('show3')
+        first.classList.remove('myop')
+    })
+    close4.addEventListener('click',()=>{
+        toe.classList.remove('show4')
+        first.classList.remove('myop')
+    })
+    close5.addEventListener('click',()=>{
+        wax.classList.remove('show5')
+        first.classList.remove('myop')
+    })
+
+</script>
+
+</html>
